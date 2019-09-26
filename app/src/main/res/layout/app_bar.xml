@@ -1,0 +1,32 @@
+<com.google.android.material.appbar.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppbarTheme">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:drawablePadding="3dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/nav_search"
+                android:background="@drawable/search_bar_drawble"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:hint="Search or enter url"
+
+                android:layout_width="match_parent" android:layout_height="30dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="?attr/colorPrimary"/>
+</com.google.android.material.appbar.AppBarLayout>
